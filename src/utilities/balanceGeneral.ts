@@ -1,14 +1,15 @@
 export const balanceDetails = [
+
+	{ name: "Inventarios", type: "debe", category: "activo corriente" },
 	{ name: "Caja y Bancos", type: "debe", category: "activo corriente" },
 	{ name: "Documentos por Cobrar", type: "debe", category: "activo corriente" },
 	{ name: "Inventario Inicial de Mercaderías", type: "debe", category: "activo corriente" },
 	{ name: "Cuentas por Cobrar", type: "debe", category: "activo corriente" },
+	{ name: "Cuentas por Cobrar Neto", type: "debe", category: "activo corriente" },
 	{ name: "Valores Negociables", type: "debe", category: "activo corriente" },
 	{ name: "IVA por Cobrar", type: "debe", category: "activo corriente" },
 	{ name: "Gastos Pagados por Anticipado", type: "debe", category: "activo corriente" },
-	{ name: "Gastos de Ventas", type: "debe", category: "activo corriente" },
-	{ name: "Gastos de Administración", type: "debe", category: "activo corriente" },
-
+	// { name: "Gastos de Ventas", type: "debe", category: "activo corriente" },
 	{ name: "Depreciación Acumulada Edificios", type: "haber", category: "activo no corriente" },
 	{ name: "Mobiliario y Equipo", type: "debe", category: "activo no corriente" },
 	{ name: "Depreciación Acumulada Vehículos", type: "haber", category: "activo no corriente" },
@@ -22,14 +23,15 @@ export const balanceDetails = [
 	{ name: "Propiedad de Planta y Equipo Neto", type: "debe", category: "activo no corriente" },
 	{ name: "Inversiones a Largo Plazo", type: "debe", category: "activo no corriente" },
 	{ name: "Intangibles NETO", type: "debe", category: "activo no corriente" },
-	{ name: "Crédito Hipotecario", type: "haber", category: "activo no corriente" },
-	{ name: "Bonos por Pagar", type: "haber", category: "activo no corriente" },
+	{ name: "Crédito Hipotecario", type: "haber", category: "pasivo no corriente" },
+	{ name: "Crédito Hipotecario A Pagar", type: "haber", category: "pasivo no corriente" },
+	{ name: "Bonos por Pagar", type: "haber", category: "pasivo no corriente" },
 
 	{ name: "Cuentas por Pagar", type: "haber", category: "pasivo corriente" },
 	{ name: "Documentos por Pagar", type: "haber", category: "pasivo corriente" },
 	{ name: "Dividendos por Pagar", type: "haber", category: "pasivo corriente" },
 	{ name: "Dividendos ", type: "haber", category: "pasivo corriente" },
-	{ name: "Impuesto por Pagar", type: "haber", category: "pasivo corriente" },
+	{ name: "Impuestos por pagar", type: "haber", category: "pasivo corriente" },
 
 	{ name: "Hipotecas", type: "haber", category: "pasivo no corriente" },
 	{ name: "Obligaciones Sociales", type: "haber", category: "pasivo no corriente" },

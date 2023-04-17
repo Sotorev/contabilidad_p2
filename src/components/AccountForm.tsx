@@ -69,14 +69,14 @@ function AccountForm(): JSX.Element {
 		setAccounts(updatedAccounts);
 	};
 
-	const handleEdit = async (id: string, newName: string, accountType: string) => {
+	const handleEdit = async (id: string, newName: string, accountType: string, editAmount: number) => {
 		const updatedAccounts = accounts.map((account) => {
 			if (account.id === id) {
 				return {
 					...account,
 					name: newName,
 					accountType: accountType,
-					amount: account.amount
+					amount: editAmount
 				};
 			}
 			return account;
@@ -105,7 +105,7 @@ function AccountForm(): JSX.Element {
 
 	const handleEditSubmit = () => {
 		if (selectedAccount) {
-			handleEdit(selectedAccount.id, editName, editAccountType);
+			handleEdit(selectedAccount.id, editName, editAccountType, editAmount);
 			setShowModal(false);
 		}
 	};
@@ -128,7 +128,7 @@ function AccountForm(): JSX.Element {
 							className="px-4 py-2 border rounded-lg"
 						/>
 					</div>
-					<div className="flex flex-col mb-4">
+					<div className="flex flex-col mb-4 ">
 						<label htmlFor="amount" className="text-lg mb-2">
 							Cantidad
 						</label>

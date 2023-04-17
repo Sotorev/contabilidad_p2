@@ -114,6 +114,14 @@ const BalanceGeneral = ({ accounts }: { accounts: Account[] }) => {
 							{getTotal('activo no corriente')}
 						</td>
 					</tr>
+					<tr className="border-b border-gray-200 font-bold">
+						<td className="py-3 px-6 text-left whitespace-nowrap">
+							Suma total del activo
+						</td>
+						<td className="py-3 px-6 text-left whitespace-nowrap">
+							{getTotal('activo no corriente') + getTotal('activo corriente')}
+						</td>
+					</tr>
 					<tr className=' font-bold uppercase'>
 						<td className='px-6'>
 							Pasivo corriente
@@ -204,9 +212,14 @@ const BalanceGeneral = ({ accounts }: { accounts: Account[] }) => {
 							{getTotal('capital contable')}
 						</td>
 					</tr>
-
-
-
+					<tr className="border-b border-gray-200 font-bold">
+						<td className="py-3 px-6 text-left whitespace-nowrap">
+							SUMA DEL PASIVO Y CAPITAL CONTABLE
+						</td>
+						<td className="py-3 px-6 text-left whitespace-nowrap">
+							{getTotal('capital contable') + getTotal('pasivo no corriente') + getTotal('pasivo corriente')}
+						</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
