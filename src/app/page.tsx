@@ -17,7 +17,6 @@ const fetchAccounts = async (): Promise<Account[] | undefined> => {
   }
 
   const data = await res.json();
-  console.log(data);
   return data.data;
 }
 async function Home() {

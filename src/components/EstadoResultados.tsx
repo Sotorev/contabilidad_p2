@@ -56,9 +56,6 @@ const EstadoResultados = ({accounts} : {accounts: Account[]}) => {
 			return variableCostAccountsSet.has(normalizeAccountName(account.name));
 		});
 
-		console.log('x', x);
-
-
 		const total = accounts.reduce((sum, account) => {
 
 			if (variableCostAccountsSet.has(normalizeAccountName(account.name))) {
